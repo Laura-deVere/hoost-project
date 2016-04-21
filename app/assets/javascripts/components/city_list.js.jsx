@@ -7,6 +7,8 @@ const PlaceList = (props) => {
 		);
 	})
 	return (
-		<ul>{citiesListItems}</ul>
+		<section className="city-list">
+			<ul>{citiesListItems}</ul>
+		</section>
 	)
 };
