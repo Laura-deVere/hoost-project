@@ -13,7 +13,7 @@ class CitiesController < ApplicationController
 		if @city.save
 			respond_to do |format|
 				format.html
-				format.json { render json: @place }
+				format.json { render json: @city }
 				format.js { render nothing: true }
 			end
 		end

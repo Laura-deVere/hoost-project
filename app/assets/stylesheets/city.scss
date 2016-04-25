@@ -8,13 +8,19 @@ body {
 }
 
 .header {
-	background-color: #008080;
+	background-color: #329999;
 	color: #fff;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: fixed;
+	top: 0;
+}
+
+.logo {
+	height: 86px;
+  width: 311px;
 }
 
 .form-btn {
@@ -26,9 +32,13 @@ body {
 	border-radius: 30px;
 }
 
+.form-btn:hover {
+	background-color: #ff4c4c;
+}
+
 .new-city-form {
 	width: 100%;
-	display: none;
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
@@ -51,12 +61,43 @@ body {
 
 .hero {
 	background-image: url('hero.jpg');
-	background-size: 100% 265px, contain;
+	background-size: contain;
 	margin: 0;
-	padding: 0;
-	height: 265px;
+	padding-top: 150px;
+	height: 180px;
 	h2 {
 		margin: 0;
+	}
+}
+
+.search-bar {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 1px solid #ccc;
+	padding: 1em;
+	font-family: 'Roboto Condensed', sans-serif;
+	h2 {
+		text-align: center;
+		color: #329999;
+		font-size: 27px;
+		margin-bottom: 10px;
+	}
+	input {
+		margin: 0 auto;
+		height: 20px;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    width: 77%;
+    padding: 9px;
+    font-size: 14px;
+    color: #bcbcbc;
+	}
+	input:focus {
+		outline: none;
 	}
 }
 
@@ -71,25 +112,38 @@ body {
 		list-style: none;
 		flex-wrap: wrap;
 		align-items: center;
+		margin: 55px auto;
+		padding: 0;
+		width: 78%;
 	}
 	li {
-		width: 250px;
-		border: 1px solid #ccc;
-		color: #008080;
+		width: 200px;
+		border: 1px solid #bcbcbc;
+		color: #329999;
 		text-align: center;
+		margin-bottom: 2em;
 	}
 }
 
 .tag {
 	color: #fff;
 	margin: 0;
-}
-
-.tag:hover {
-	background-color: red;
 	height: 30px;
 }
 
+.tag:hover {
+	background-color: #ff4c4c;
+}
+
+.hidden-btn {
+	display: none;
+}
+
+.footer {
+	width: 100%;
+	background-color: #595959;
+	height: 75px;
+}
 
 
 

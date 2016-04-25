@@ -1,0 +1,64 @@
+class App extends React.Component {
+	constructor(props){
+		super(props);
+
+		this.state = {
+			query: '',
+			cities: [],
+			showForm: false
+		};
+	}
+
+	componentDidMount() {
+		$.getJSON('cities.json', (response) => {this.setState({ cities: response }) });
+	}
+
+	onSearch(query) {
+		console.log(query)
+		let queryResult = [];
+		this.state.cities.map((city) => {
+			if(city.city.toLowerCase().indexOf(query)!=-1)
+				queryResult.push(city);
+		});
+		this.setState({
+			query: query,
+			cities: queryResult
+		});
+	}
+
+	handleAdd(city) {
+		const newState = this.state.cities.concat(city);
+		this.setState({ cities: newState })
+	}
+
+	onShowForm() {
+		if(!this.state.showForm) {
+		this.setState({
+			showForm: true
+		}); 
+		} else  {this.setState({
+			showForm: false
+			});
+		}
+	}
+
+	render() {
+		return (
+			<div>
+				<header className="header">
+					<img src="<%= asset_url('logo.png') %>" className="logo" />
+					<div className="form-btn" onClick={this.onShowForm.bind(this)} >
+						<img src="<%= asset_url('plus.png') %>" />
+					</div>
+					{this.state.showForm ? <NewCity handleAdd={this.handleAdd.bind(this)} /> : null }
+				</header>
+				<section>
+					<SearchBar onSearch={this.onSearch.bind(this)} />
+					<PlaceList cities={this.state.cities} />
+					<footer className="footer">
+					</footer>
+				</section>
+			</div>
+		)
+	}
+}

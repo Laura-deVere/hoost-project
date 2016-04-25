@@ -1,7 +1,7 @@
 const City = ({city}) => {
 	const picStyle = {
 		height: '150px',
-		width: '250px'
+		width: '200px'
 	}
 	return (
 		<li>
