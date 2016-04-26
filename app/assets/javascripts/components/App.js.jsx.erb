@@ -44,7 +44,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<header className="header">
 					<img src="<%= asset_url('logo.png') %>" className="logo" />
 					<div className="form-btn" onClick={this.onShowForm.bind(this)} >
@@ -52,12 +52,12 @@ class App extends React.Component {
 					</div>
 					{this.state.showForm ? <NewCity handleAdd={this.handleAdd.bind(this)} /> : null }
 				</header>
-				<section>
+				<main className="main-section">
 					<SearchBar onSearch={this.onSearch.bind(this)} />
 					<PlaceList cities={this.state.cities} />
 					<footer className="footer">
 					</footer>
-				</section>
+				</main>
 			</div>
 		)
 	}
