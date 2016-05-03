@@ -65,7 +65,7 @@ body {
 }
 
 .hero {
-	background-image: url('hero.jpg');
+	background-image: image-url('hero.jpg');
 	background-size: 100% 100%;
 	margin: 0;
 	padding-top: 118px;
@@ -92,7 +92,7 @@ body {
 		margin-bottom: 10px;
 	}
 	input {
-		background-image: url('magnifier.png');
+		background-image: image-url('magnifier.png');
 		background-repeat: no-repeat;
 		text-indent: 20px;
 		margin: 0 auto;
