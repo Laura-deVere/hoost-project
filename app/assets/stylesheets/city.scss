@@ -14,10 +14,6 @@ body {
 	min-height: 100vh;
 }
 
-.main-section {
-	flex: 1;
-}
-
 .header {
 	background-color: #329999;
 	color: #fff;
@@ -36,16 +32,11 @@ body {
 }
 
 .form-btn {
-	background-color: #fff;
 	margin-top: 1em;
 	margin-right: 1em;
 	height: 30px;
 	width: 30px;
 	border-radius: 30px;
-}
-
-.form-btn:hover {
-	background-color: #ff4c4c;
 }
 
 .new-city-form {
@@ -139,7 +130,7 @@ body {
 		border: 1px solid #bcbcbc;
 		color: #329999;
 		text-align: center;
-		margin: 0 50px 20px 50px;
+		margin: 0 35px 20px 50px;
 	}
 	img {
 		height: 150px;
@@ -159,10 +150,6 @@ body {
 	height: 30px;
 }
 
-.tag:hover {
-	background-color: #ff4c4c;
-}
-
 .hidden-btn {
 	display: none;
 }
@@ -171,11 +158,18 @@ body {
 	width: 100%;
 	background-color: #595959;
 	height: 75px;
+	flex: 1;
+}
+@media screen and (min-width: 376px) {
+	.tag:hover {
+		background-color: #ff4c4c;
+	}
 }
 
 @media screen and (min-width: 320px) and (max-width: 375px) { 
    .city-list {
-   	margin: 30px auto;
+   	margin: 30px 0;
+   	width: 100%;
    	ul {
    		margin: 0;
    		width: 100%;
@@ -183,7 +177,7 @@ body {
    	li {
 	   	display: flex;
 	   	width: 375px;
-	   	height: 123px;
+	   	height: 130px;
 	   	flex-direction: row;
 	   	margin: 0;
 	   }

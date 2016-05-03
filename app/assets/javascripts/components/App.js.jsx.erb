@@ -14,9 +14,10 @@ class App extends React.Component {
 	}
 
 	onSearch(query) {
-		console.log(query)
+	console.log(query);
 		let queryResult = [];
-		this.state.cities.map((city) => {
+		let cities = this.props.cities;
+		cities.map((city) => {
 			if(city.city.toLowerCase().indexOf(query)!=-1)
 				queryResult.push(city);
 		});
@@ -27,7 +28,7 @@ class App extends React.Component {
 	}
 
 	handleAdd(city) {
-		const newState = this.state.cities.concat(city);
+		const newState = this.props.cities.concat(city);
 		this.setState({ cities: newState })
 	}
 
@@ -43,21 +44,26 @@ class App extends React.Component {
 	}
 
 	render() {
+		const btnStyle = {
+			backgroundColor: 'white'
+		};
+		if (this.state.showForm) {
+			btnStyle['backgroundColor'] = "#ff4c4c";
+		}
 		return (
 			<div className="container">
 				<header className="header">
 					<img src="<%= asset_url('logo.png') %>" className="logo" />
-					<div className="form-btn" onClick={this.onShowForm.bind(this)} >
+					<div className="form-btn" onClick={this.onShowForm.bind(this)} style={btnStyle}>
 						<img src="<%= asset_url('plus.png') %>" />
 					</div>
 					{this.state.showForm ? <NewCity handleAdd={this.handleAdd.bind(this)} /> : null }
 				</header>
 				<main className="main-section">
-					<SearchBar onSearch={this.onSearch.bind(this)} />
+					<SearchBar onSearch={this.onSearch.bind(this)} query={this.state.query} />
 					<PlaceList cities={this.state.cities} />
-					<footer className="footer">
-					</footer>
 				</main>
+				<footer className="footer"></footer>
 			</div>
 		)
 	}
