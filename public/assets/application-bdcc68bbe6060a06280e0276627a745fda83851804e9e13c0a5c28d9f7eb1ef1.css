@@ -1,0 +1,323 @@
+/* line 4, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Handlee', cursive;
+  height: 100%;
+}
+
+/* line 11, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 17, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.header {
+  background-color: #329999;
+  color: #fff;
+  box-shadow: 2px 2px 2px #696969;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+}
+
+/* line 29, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.logo {
+  height: 80px;
+  width: 311px;
+}
+
+/* line 34, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.form-btn {
+  margin-top: 1em;
+  margin-right: 1em;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+/* line 42, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.new-city-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 51, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.form-elms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 55, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.form-elms label {
+  margin-bottom: 5px;
+}
+/* line 58, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.form-elms input {
+  width: 200px;
+  height: 27px;
+  height: 24px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 67, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.hero {
+  background-image: url(/assets/hero-74c5a85a84666b8628a90a4c59b00e15bbb0a82ded7dca266ebdfebe13a95b5a.jpg);
+  background-size: 100% 100%;
+  margin: 0;
+  padding-top: 118px;
+  height: 200px;
+}
+/* line 73, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.hero h2 {
+  margin: 0;
+}
+
+/* line 78, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  padding: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 88, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.search-bar h2 {
+  text-align: center;
+  color: #329999;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+/* line 94, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.search-bar input {
+  background-image: url(/assets/magnifier-6e55c87d66b03f14e3220fabe0d8c6921fe7c18aa090a35909934785dd32fd29.png);
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  margin: 0 auto;
+  height: 20px;
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  width: 72%;
+  padding: 9px;
+  font-size: 14px;
+  color: #bcbcbc;
+}
+/* line 107, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.search-bar input:focus {
+  outline: none;
+}
+
+/* line 112, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.city-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 118, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.city-list ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 55px auto;
+  padding: 0;
+  width: 100%;
+}
+/* line 127, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.city-list li {
+  width: 200px;
+  height: 270px;
+  border: 1px solid #bcbcbc;
+  color: #329999;
+  text-align: center;
+  margin: 0 35px 20px 50px;
+}
+/* line 135, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.city-list img {
+  height: 150px;
+  width: 200px;
+}
+
+/* line 141, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.city-name {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 146, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.tag {
+  padding: 5px;
+  color: #fff;
+  margin: 0;
+  height: 30px;
+}
+
+/* line 153, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.hidden-btn {
+  display: none;
+}
+
+/* line 157, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+.footer {
+  width: 100%;
+  background-color: #595959;
+  height: 75px;
+  flex: 1;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 165, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .tag:hover {
+    background-color: #ff4c4c;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 736px) {
+  /* line 170, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list {
+    margin: 30px auto;
+    width: 100%;
+  }
+  /* line 173, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list ul {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* line 177, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list li {
+    display: flex;
+    width: 414px;
+    height: 130px;
+    flex-direction: row;
+    margin: 0;
+  }
+  /* line 184, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list img {
+    height: 104px;
+    width: 170px;
+    padding: 11px;
+  }
+
+  /* line 191, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-desc {
+    order: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 5px;
+  }
+
+  /* line 200, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-name {
+    margin-right: 16px;
+    font-size: 12px;
+  }
+
+  /* line 205, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .tag {
+    color: black;
+    height: 1px;
+  }
+
+  /* line 210, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .hero {
+    padding-top: 80px;
+  }
+
+  /* line 214, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .search-bar {
+    width: 414px;
+    height: 166px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 376px) {
+  /* line 221, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list {
+    margin: 30px 0;
+    width: 100%;
+  }
+  /* line 224, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list ul {
+    margin: 0;
+    width: 100%;
+  }
+  /* line 228, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list li {
+    display: flex;
+    width: 375px;
+    height: 130px;
+    flex-direction: row;
+    margin: 0;
+  }
+  /* line 235, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-list img {
+    height: 104px;
+    width: 170px;
+    padding: 11px;
+  }
+
+  /* line 242, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-desc {
+    order: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 5px;
+  }
+
+  /* line 251, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .city-name {
+    margin-right: 16px;
+    font-size: 12px;
+  }
+
+  /* line 256, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .tag {
+    color: black;
+    height: 1px;
+  }
+
+  /* line 261, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .hero {
+    padding-top: 80px;
+  }
+
+  /* line 265, /Users/lauradeverehopkins/myprojects/react/my_bucket_list/app/assets/stylesheets/city.scss */
+  .search-bar {
+    width: 340px;
+    height: 166px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
