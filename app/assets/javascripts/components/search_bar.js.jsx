@@ -1,6 +1,6 @@
 class SearchBar extends React.Component {
 	citySearch() {
-		let query = this.refs.searchInput.value.toLowerCase();
+		let query = this.refs.searchInput.value;
 		this.props.onSearch(query);
 	}
 
