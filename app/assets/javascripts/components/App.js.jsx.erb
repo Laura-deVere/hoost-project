@@ -17,9 +17,9 @@ class App extends React.Component {
 	console.log(query);
 		let queryResult = [];
 		let cities = this.props.cities;
-		cities.map((city) => {
-		var newQuery = query.toLowerCase();
+		let newQuery = query.toLowerCase();
 		console.log(newQuery);
+		cities.map((city) => {
 			if((city.city.toLowerCase().indexOf(newQuery)!=-1))
 				queryResult.push(city);
 		});
