@@ -53,9 +53,9 @@ class App extends React.Component {
 		return (
 			<div className="container">
 				<header className="header">
-					<img src="<%= asset_url('logo.png') %>" className="logo" />
+					<img src="/assets/logo-b6655a5990106fd7578a84ac37f686ee1c8b1448699d43d9520674545c39686b.png" className="logo" />
 					<div className="form-btn" onClick={this.onShowForm.bind(this)} style={btnStyle}>
-						<img src="<%= asset_url('plus.png') %>" />
+						<img src="/assets/plus-54c7d511e6f71509e1a8b1b38bc7679d70df18f7c559e3534ef3b90d8994aaa4.png" />
 					</div>
 					{this.state.showForm ? <NewCity handleAdd={this.handleAdd.bind(this)} /> : null }
 				</header>
