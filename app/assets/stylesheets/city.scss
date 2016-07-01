@@ -1,6 +1,7 @@
 // Place all the styles related to the City controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'ionicons';
 body {
 	margin: 0;
 	padding: 0;
@@ -138,9 +139,15 @@ body {
 	}
 }
 
+.delete {
+	position: absolute;
+	padding: 9px;
+  color: #ff4c4c;
+}
+
 .city-name {
-	margin-left: 10px;
-  margin-right: 10px;
+	margin-left: 15px;
+  margin-right: 15px;
 }
 
 .tag {
@@ -164,8 +171,11 @@ body {
 @media screen and (min-width: 500px) {
 	.tag:hover {
 		background-color: #ff4c4c;
+		-webkit-transition-duration: 0.6s;
+		transition-duration: 0.6s;
 	}
 }
+
 @media screen and (min-width: 414px) and (max-width: 736px) {
 	.city-list {
    	margin: 30px auto;
