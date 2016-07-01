@@ -1,10 +1,12 @@
 class PlaceList extends React.Component {
+
 	render() {
 		const citiesListItems = this.props.cities.map((city) => {
 		return (
 			<City 
 				key={city.id}
-				city={city} />
+				city={city}
+				handleDelete={this.props.handleDelete} />
 		);
 	})
 	

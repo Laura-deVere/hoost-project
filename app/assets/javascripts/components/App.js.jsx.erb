@@ -32,6 +32,27 @@ class App extends React.Component {
 		this.setState({ cities: newState })
 	}
 
+	handleDelete(id) {
+		$.ajax({
+			url: `/cities/${id}`,
+			type: 'DELETE',
+			dataType: 'JSON',
+			success: () => {
+				this.removeCity(id);
+			},
+			error: () => {
+				console.log('Something went wrong!');
+			}
+		});
+	}
+
+	removeCity(id) {
+		const newCityList = this.state.cities.filter((i) => {
+			return i.id != id;
+		})
+		this.setState({ cities: newCityList });
+	}
+
 	onShowForm() {
 		if(!this.state.showForm) {
 		this.setState({
@@ -61,7 +82,7 @@ class App extends React.Component {
 				</header>
 				<main className="main-section">
 					<SearchBar onSearch={this.onSearch.bind(this)} query={this.state.query} />
-					<PlaceList cities={this.state.cities} />
+					<PlaceList cities={this.state.cities} handleDelete={this.handleDelete.bind(this)} />
 				</main>
 				<footer className="footer"></footer>
 			</div>

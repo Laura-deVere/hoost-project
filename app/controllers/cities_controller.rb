@@ -19,6 +19,16 @@ class CitiesController < ApplicationController
 		end
 	end
 
+	def destroy
+		@city = City.find(params[:id])
+		@city.destroy
+		if request.xhr?
+			render :json => @city
+		else
+			redirect_to root_path
+		end
+	end
+
 	private
 
 	def city_params
