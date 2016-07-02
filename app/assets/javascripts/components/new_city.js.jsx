@@ -34,19 +34,19 @@ class NewCity extends React.Component {
 				<form onSubmit={this.handleSave.bind(this)} className="new-city-form">
 					<div className="form-elms">
 						<label>City </label>
-						<input type='text' ref='cityname' />
+						<input type='text' ref='cityname' placeholder='Paris' />
 					</div>
 					<div className="form-elms">
 						<label>Country </label>
-						<input type='text' ref='country' />
+						<input type='text' ref='country' placeholder='France' />
 					</div>
 					<div className="form-elms">
 						<label>Pic Link </label>
-						<input type='text' ref='link' />
+						<input type='text' ref='link' placeholder='http://images.....' />
 					</div>
 					<div className="form-elms">
 						<label>Tag </label>
-						<input type='text' ref='tag' />
+						<input type='text' ref='tag' placeholder='LOVE' />
 					</div>
 					<input type="submit" className="hidden-btn" />
 				</form>	
